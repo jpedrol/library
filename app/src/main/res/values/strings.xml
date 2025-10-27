@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">DesMovel</string>
+<string name="prximos_eventos">Próximos eventos</string>
+        <string name="app_name">DesenvolvimentoMovel</string>
+        <string name="eventos">EVENTOS</string>
+        <string name="nome_do_evento">Clube do livro Balaio</string>
+        <string name="voltar">Voltar</string>
 </resources>
