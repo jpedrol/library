@@ -4,4 +4,11 @@
         <string name="eventos">EVENTOS</string>
         <string name="nome_do_evento">Clube do livro Balaio</string>
         <string name="voltar">Voltar</string>
+        <string name="ver_detalhes">"Ver detalhes"</string>
+        <string name="audit_rio">📍 Auditório</string>
+        <string name="territ_rios_e_o_realismo_m_gico_nordestino">Territórios e o realismo mágico nordestino</string>
+        <string name="mes_escolhido">SET</string>
+        <string name="Tipo_evento">Roda de Conversa</string>
+        <string name="dia_evento">26</string>
+        <string name="hora_evento">11:00</string>
 </resources>
