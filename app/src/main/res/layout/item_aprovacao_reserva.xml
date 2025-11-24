@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTituloSolicitacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitação de reserva de livro:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Descrição da solicitação -->
+        <TextView
+            android:id="@+id/tvDescricaoSolicitacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gabriel Gomes está solicitando a reserva do livro \'A Culpa é das Estrelas\' para o período de 26 a 29 de setembro."
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginBottom="12dp" />
+
+        <!-- Quantidade de exemplares -->
+        <TextView
+            android:id="@+id/tvQuantidadeExemplares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de exemplares: 10"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botão Aprovar -->
+        <Button
+            android:id="@+id/btnAprovar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Aprovar reserva!"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_aprovar_background"
+            android:backgroundTint="@color/primary_blue"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#2C5AFF</color>
+    <color name="primary_blue_dark">#1E3FCC</color>
+
+    <!-- Cores de fundo -->
+    <color name="card_background">#F5F5F5</color>
+    <color name="background_white">#FFFFFF</color>
+
+    <!-- Cores de texto -->
+    <color name="text_black">#000000</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Cores de status -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="error_red">#F44336</color>
 </resources>

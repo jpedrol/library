@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
+
 class DetalhesEventoActivity : AppCompatActivity() {
 
     private lateinit var botaoVoltar: ImageButton
@@ -74,7 +75,7 @@ class DetalhesEventoActivity : AppCompatActivity() {
 
     private fun editarEvento() {
         // Navegar para tela de edição
-        val intent = Intent(this, CriarEventoActivity::class)
+        val intent = Intent(this, CriarEventoActivity::class.java)
         intent.putExtra("eventoId", eventoId)
         intent.putExtra("modo", "EDITAR")
         startActivity(intent)
