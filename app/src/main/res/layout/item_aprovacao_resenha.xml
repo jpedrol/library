@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="14dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Cabeçalho -->
+        <TextView
+            android:id="@+id/tvTituloResenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aprovação de avaliações feitas por usuário:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Conteúdo da resenha -->
+        <TextView
+            android:id="@+id/tvConteudoResenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- BOTÕES LADO A LADO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnAprovarResenha"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:text="Aprovar avaliação!"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#0000FF"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnRecusarResenha"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:text="Recusar avaliação!"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#0000FF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Linha preta -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

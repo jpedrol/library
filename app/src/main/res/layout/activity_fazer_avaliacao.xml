@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1976D2"
+    tools:context=".FazerAvaliacaoActivity">
+
+    <!-- TOP BAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/seta_esquerda_chevron"
+            android:contentDescription="Voltar"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- CONTEÚDO COM PADDING LATERAL -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TÍTULO PRETO -->
+            <TextView
+                android:id="@+id/tvTituloAvaliacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="Faça a sua avaliação:"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- CARD BRANCO CENTRAL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="14dp"
+                android:elevation="6dp"
+                android:layout_marginBottom="40dp">
+
+                <!-- Pergunta -->
+                <TextView
+                    android:id="@+id/tvPerguntaNota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="De 0 a 5, o que achou do livro ?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Estrelas (imagens ou RatingBar) -->
+                <RatingBar
+                    android:id="@+id/ratingAvaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="0"
+                    android:layout_gravity="center"
+                    android:progressTint="#FFD700"
+                    android:secondaryProgressTint="#FFD700"
+                    android:layout_marginBottom="18dp"/>
+
+                <!-- Descreva sobre -->
+                <TextView
+                    android:id="@+id/tvDescreva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descreva sobre:"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- CAIXA DE TEXTO -->
+                <EditText
+                    android:id="@+id/etDescricaoAvaliacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@android:drawable/edit_text"
+                    android:gravity="top|start"
+                    android:padding="10dp"
+                    android:hint="Ex: Emocionante, muito bem escrito, cativante..."
+                    android:textSize="14sp"
+                    android:maxLength="500"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- BOTÃO -->
+                <Button
+                    android:id="@+id/btnIncluirAvaliacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Incluir avaliação"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:backgroundTint="#77A7FF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
